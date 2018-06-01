@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>知图教育1</title>
+	<link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" href="./css/zt.css">
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+</head>
+<body>
+	<div id="main">
+		<div class="head">
+			<img src="./image/logo.png" alt="">
+			<div class="my">
+				<img src="./image/my.png" alt="">
+				<span>我的</span>
+			</div>
+		</div>
+		<div class="top-pic">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+					<div class="swiper-slide" v-for="item in banner"><img :src="item.image" alt=""></div>
+			    </div>
+		    	<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div class="classification">
+			<ul>
+				<a :href="'vue-list.html?id='+item.id+'&name='+item.name" v-for="item in subjects">
+					<li>
+						<img :src="item.icon" alt="">
+						<p>{{item.name}}</p>
+					</li>
+				</a>
+			</ul>
+		</div>
+		<h6 class="title">热门教师</h6>
+		<div class="teacher-list">
+		<a :href="'zt1-details.html?id='+item.id"  v-for="item in list">
+			<div class="teacher">
+				<img :src="item.image" alt="" class="teacherPhoto">
+				<div class="content">
+					<p><span class="teacher">{{item.name}}</span><span class="green">{{item.subject[0].label}}</span><span class="white">{{item.grade[0].label}}</span><span class="time">已授{{item.teach_time}}课时</span></p>
+					<p class="teach_year">{{item.teach_year}}年教龄</p>
+					<p class="accept"><span><img src="./image/dui.png" alt="" class="logo-dui"></span><span>{{item.type[0].label}}</span></p>
+				</div>
+			</div>
+		</a>
+		</div>
+	</div>
+	<script src="./js/swiper-3.4.2.min.js"></script>
+	<script type="text/javascript" src="./js/zt.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+body{
+	font-size: 62.5%;
+	font-family: "微软雅黑";
+	background-color: #f1f1f1;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.head{
+    padding: 1.32rem;
+    background-color: #fff;
+    /*font-size: 0;*/
+}
+.head img{
+	width: 5.26667rem;
+    height: 2.4rem;
+}
+.head .my{
+	float: right;
+}
+.head .my img{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.head .my span{
+    margin-left: 0.10667rem;
+    vertical-align: 1.05333rem;
+    font-size: 1.4rem;
+    color: #262323;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}  
+.swiper-slide img{
+	width: 100%;
+    height: 100%;
+}
+.header-logo{
+	width: 100%;
+}
+.classification{
+	background-color: #fff;
+	padding: 2rem 3rem;
+	overflow: hidden;
+}
+.classification ul li{
+	list-style: none;
+	float: left;
+	text-align: center;
+	width: 20%;
+}
+.classification ul li img{
+	width: 6rem;
+	height: 6rem;
+	border: 1px solid #fff;
+	border-radius: 35px;
+}
+.classification ul li p{
+	font-size: 28px;
+	display: block;
+	margin-top: 1rem;
+}
+.title{
+	font-size: 40px;
+	padding: 2.5rem;
+	color: orange;
+}
+.teacher{
+	background-color: #fff;
+	position: relative;
+	margin-top: 1rem;
+}
+.content{
+	padding: 2rem 2rem 2rem 13rem;
+}
+.teacher img.teacherPhoto{
+	width: 9rem;
+	height: 8.5rem;
+	position: absolute;
+	left: 2rem;
+	top: 2rem;	
+}
+.teacher .content span.teacher{
+	float: left;
+	font-size: 35px;
+	color: #262323;
+}
+.teacher .content span.green{
+	display: inline-block;
+    padding: 0 1rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    background: #52c644;
+    border: 1px solid #52c644;
+}
+.teacher .content span.white{
+	display: inline-block;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #097c25;
+    color: #097c25;
+}
+.teacher .content span{
+	/*float: left;*/
+	/*width: 5rem;
+	height: 3rem;*/
+	font-size: 25px;
+	margin-left: 1rem;
+	text-align: center;
+/*	background-color: #f1f1f1;*/
+	margin-top: 0.5rem;
+}
+.time{
+	float: right;
+	font-size: 30px;
+	color: #333	;
+	overflow: hidden;
+}
+.teach_year{
+	margin-top: 1.5rem;
+	font-size: 1.98778rem;
+	color: #888;
+	margin-left: 1.10667rem;
+}
+.teacher .content .accept span{
+	font-size: 1.94667rem;
+    color: #262323;
+    margin-left: 1.10667rem;
+    display: inline-block;
+}
+.teacher .content .accept span img{
+	width: 2rem;
+	height: 2rem;
+}
+.cb{
+	height: 3rem;
+}

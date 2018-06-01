@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+	<meta name="format-detection" content="telephone=no">
+	<title>知图教育1-详情</title>
+	<link rel="stylesheet" href="./css/zt1-details.css">
+</head>
+<body>
+	<div id="main">
+		<div class="teacher-list">
+			<div class="teacher">
+				<img :src="list.image" alt="">
+				<div class="content">
+					<p class="detail">
+						<span class="name">{{list.name}}</span>
+						<span v-for="item in list.subject" class="green">{{item.label}}</span>
+						<span v-for="item in list.grade" class="white">{{item.label}}</span>
+						<span class="time red">{{list.price}}</span>
+					</p>
+					<p class="teach_year">{{list.teach_year}}年教龄</p>
+					<p class="cb">
+						<span v-for="item in list.extend_tag">{{item.label}}</span>
+						<span class="time">已授{{list.teach_time}}课时</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="message">
+			<div class="personage">
+				<h3>个人简介</h3>
+				<p>{{list.intro}}</p>
+			</div>
+			<div class="teach">
+				<h3>教学经历</h3>
+				<p v-for="item in list.teacher_experience">{{item.title}}</p>
+			</div>
+			<div class="success">
+				<h3>成功案例</h3>
+				<div class="case" v-for="item in list.teacher_case">
+					<h4>{{item.title}}</h4>
+					<p>{{item.content}}</p>
+				</div>
+			</div>
+		</div>
+		<div class="order-line">
+			<div class="order-text">满意就预约吧！</div>
+			<hr>
+		</div>
+		<div class="order-btn">
+			<div class="btn collect">
+				<span>收藏</span>
+    		</div>
+    		<div class="btn order-now">
+		      预约试讲
+		    </div>
+		</div>
+	</div>
+	<script src="./js/jquery-3.2.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.14/dist/vue.js"></script>
+	<script type="text/javascript" src="./js/zt1-details.js"></script>
+</body>
+</html>
